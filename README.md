@@ -1,5 +1,3 @@
-# blog
-It's about technology and some ideas about programming.
+# 个人博客系统
 
 
-Please refer to the Issues.
