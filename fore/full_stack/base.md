@@ -1,5 +1,3 @@
-# Web全栈
-
 ## 基础知识
 ### ES6
 #### 变量/赋值
@@ -46,13 +44,9 @@ let, const
 
 
 #### 面向对象
-  ES5实现继承的方式可以参考 [这里](/fore/base/继承)  
+  ES5实现继承的方式可以参考 [这里](/fore/full_stack/继承)  
   定义： class / constructor  
   继承： extends / super  
 
 
-
-
-
-
-
+<p align="right"> 2019年10月15日 </p>
