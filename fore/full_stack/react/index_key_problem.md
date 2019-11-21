@@ -76,7 +76,9 @@ const Item = (props) => {
 }
 ```
 &emsp;&emsp;请观看下面的一段短视频，就能发现我们预料不到的错误出现了，右侧的输入框中的内容并没有出现我们预想的结果，这就是本文标题中所说的 **潜在问题**。  
-<div style='margin: 0 auto;max-width: 800px;padding: 30px 15px 40px;position: relative;'><video style='width:100%' src='../../images/index_key.mp4' controls='controls'></div>
+<!-- <div style='margin: 0 auto;max-width: 800px;padding: 30px 15px 40px;position: relative;'><video style='width:100%' src='../../images/index_key.mp4' controls='controls'></div> -->
+
+![使用index的问题](../../../images/index_key.gif)
 
 &emsp;&emsp;仔细观看右侧的 DOM 结构不难发现，整个 Item 组件由于使用的 key 是 index，当压入一个新的元素时，这个新元素的 index 就是原来的 index，导致 React 错误的认为新渲染的这个 DOM 节点还是原来的 DOM 节点，只是内部的 文本发生了变化('item 0' => 'item 2')，而 input 输入框由于两者都有，所以 React 并没去更新这个 input DOM 节点，因此才到这个问题的发生。  
 
