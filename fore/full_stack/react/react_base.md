@@ -105,6 +105,8 @@
 
 
 
+<p align="right"> 2019年11月21日 </p>
+
 [1]:https://zh-hans.reactjs.org/docs/getting-started.html
 [2]:https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318
 [3]:fore/full_stack/react/index_key_problem
