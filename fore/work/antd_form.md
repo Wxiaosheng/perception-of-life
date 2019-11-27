@@ -37,6 +37,9 @@ import React, { Component } from 'react'
 import { inject, observer } from 'mobx-react'
 import { Modal, Form, Input, Select, message } from 'antd'
 
+// url 验证
+const URL_REG = /(http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-.,@?^=%&:/~+#]*[\w\-@?^=%&/~+#])?/
+
 // 通过 mobx 注入 app props
 @inject('app')
 @observer
