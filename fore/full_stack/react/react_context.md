@@ -329,8 +329,8 @@ class APP extends Component {
 
 <p align="right"> 2019年11月21日 </p>
 
-[1]:https://wxiaosheng.github.io/perception-of-life/#/fore/full_stack/react/react_context?id=%e4%bd%95%e6%97%b6%e4%bd%bf%e7%94%a8-context
-[2]:https://wxiaosheng.github.io/perception-of-life/#/fore/full_stack/react/react_context?id=%e4%bd%bf%e7%94%a8-context-%e4%b9%8b%e5%89%8d%e7%9a%84%e8%80%83%e8%99%91
+[1]:https://wxiaosheng.github.io/perception-of-life/#/fore/full_stack/react/react_context?id=何时使用-context
+[2]:https://wxiaosheng.github.io/perception-of-life/#/fore/full_stack/react/react_context?id=使用-context-之前的考虑
 [3]:https://wxiaosheng.github.io/perception-of-life/#/fore/full_stack/react/react_context?id=api
 [4]:https://wxiaosheng.github.io/perception-of-life/#/fore/full_stack/react/react_context?id=reactcreatecontext
 [5]:https://wxiaosheng.github.io/perception-of-life/#/fore/full_stack/react/react_context?id=contextprovider
