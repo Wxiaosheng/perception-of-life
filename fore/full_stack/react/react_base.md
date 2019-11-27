@@ -32,19 +32,23 @@
 #### JSX 语法（JSX syntax）
 &emsp;&emsp;是一个 JavaScript 的语法扩展。
 
+
 #### 元素渲染（Rendering Elements）
 &emsp;&emsp;是构成 React 应用最小的砖块  
 &emsp;&emsp;与浏览器的 DOM 元素不同，React 元素是创建开销极小的普通对象。React DOM 会负责更新 DOM 来与 React 元素保持一致。  
 &emsp;&emsp;React 元素是不可变对象，一旦被创建，你就无法更改它的子元素或者属性。一个元素就像电影的单帧：它代表了某个特定时刻的 UI。  
 
+
 ##### React 只更新它需要更新的部分
 &emsp;&emsp;React DOM 会将元素和它的子元素与它们之前的状态进行比较，并只会进行必要的更新来使 DOM 达到预期的状态。- diff 算法  
 &emsp;&emsp;根据我们的经验，考虑 UI 在任意给定时刻的状态，而不是随时间变化的过程，能够消灭一整类的 bug。
+
 
 #### 组件 & Props
 &emsp;&emsp;组件，从概念上类似于 JavaScript 函数。它接受任意的入参（即 “props”），并返回用于描述页面展示内容的 React 元素。  
 &emsp;&emsp;分类： **函数组件** 和 **类(class)组件**  
 &emsp;&emsp;通过不同的组件能够组成复杂的、大型的应用，且 **Props 是只读的**
+
 
 #### state & 生命周期
 &emsp;&emsp;正确的使用 state  
@@ -53,6 +57,7 @@
 &emsp;&emsp;&emsp;&emsp;3、state 的更新会被合并。(只会更新setState中传入的部分，其他部分不变)  
 
 &emsp;&emsp;数据流动是向下的，通常会被叫做 **“自上而下”** 或是 **“单向”** 的数据流
+
 
 #### 事件处理
 &emsp;&emsp;React元素的事件处理和DOM元素的很相似，但是有一点语法上的不同：  
@@ -66,22 +71,27 @@
 &emsp;&emsp;&emsp;&emsp;2、使用实验性的 public class fields 语法，Create React App 默认启用此语法。  
 &emsp;&emsp;&emsp;&emsp;3、使用箭头函数。  
 
+
 #### 条件渲染
 &emsp;&emsp;在 React 中，你可以创建不同的组件来封装各种你需要的行为，然后依据应用的不同状态，你可以只渲染对应状态下的部分内容。  
 &emsp;&emsp;运算符：与运算符 &&、 三目运算符 x ? a : b、阻止组件渲染(return null)  
 &emsp;&emsp;**注意**，在组件的render方法中return null，并不会影响组件生命周期的触发。
+
 
 #### 列表 & key
 &emsp;&emsp;key 只是在兄弟节点之间必须唯一。  
 &emsp;&emsp;当使用 map 渲染组件时，如果使用 index 做为key，则会存在安全隐患，具体可以参照 [Index as a key is an anti-pattern][2]  
 &emsp;&emsp;为了更好的理解使用 index 作为 key 存在的问题，请参考这篇 [文章][3]
 
+
 #### 状态提升
 &emsp;&emsp;通常，多个组件需要反映相同的变化数据，这时我们建议将共享状态提升到最近的共同父组件中去。
+
 
 #### 组合 VS 继承
 &emsp;&emsp;React 有十分强大的组合模式。我们推荐使用组合而非继承来实现组件间的代码重用。  
 &emsp;&emsp;如果你想要在组件间复用非 UI 的功能，我们建议将其提取为一个单独的 JavaScript 模块，如函数、对象或者类，组件可以直接引入（import）而无需通过 extend 继承它们。
+
 
 #### React 哲学
 &emsp;&emsp;第一步：将设计好的 UI 划分为组件层级  
@@ -102,6 +112,7 @@
 &emsp;&emsp;尽管你可能需要编写更多的代码，但是别忘了：**比起写，代码更多地是给人看的**。  
 
 &emsp;&emsp;当你开始构建更大的组件库时，你会意识到这种代码模块化和清晰度的重要性，并且随着代码重用程度的加深，你的代码行数也会显著地减少。
+
 
 
 

@@ -5,6 +5,7 @@
 #### 一些基础知识概念的总结
 
 1. [基于官方文档的基础知识](fore/full_stack/react/react_base)
+1. [基于官方文档的高级指引](fore/full_stack/react/react_advanced_guides)
 
 <div style='margin-top: 100px'></div>
 
