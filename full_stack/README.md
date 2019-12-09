@@ -1,10 +1,10 @@
 ## 全栈开发的知识体系
   
-#### [基础知识](fore/full_stack/base)  
+#### [基础知识](full_stack/base)  
 &emsp;&emsp;ES6/ES7、HTML5/CSS3、数据交互、...   
 
 
-#### [React](fore/full_stack/react/)
+#### [React](full_stack/react/)
 &emsp;&emsp;自己在工作中使用最多构建用户界面的前端框架，包含了自己的学习过程，以及对自己所遇见问题的一些解决方案。
 
 
@@ -23,7 +23,7 @@
 &emsp;&emsp;版本控制、编译、打包、脚手架...  
 
 
-#### [后台](back/)
+#### [后台]()
 &emsp;&emsp;Node、express、KOA、爬虫... 
 
 

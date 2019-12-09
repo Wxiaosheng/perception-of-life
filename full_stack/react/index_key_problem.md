@@ -93,4 +93,4 @@ const Item = (props) => {
 <p align="right"> 2019年11月21日 </p>
 
 [1]:https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318
-[2]:fore/full_stack/react/react_diff
+[2]:full_stack/react/react_diff

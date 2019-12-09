@@ -1,9 +1,9 @@
 # 高级指引
-* [高级指引](/fore/full_stack/react/react_advanced_guides?id=高级指引)
+* [高级指引](/full_stack/react/react_advanced_guides?id=高级指引)
 
-* [Context](/fore/full_stack/react/react_context)
+* [Context](/full_stack/react/react_context)
 
-* [JSX语法](/fore/full_stack/react/react_advanced_guides?id=jsx语法)
+* [JSX语法](/full_stack/react/react_advanced_guides?id=jsx语法)
 
 
 
