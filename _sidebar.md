@@ -1,6 +1,5 @@
-* [前端](fore/)
-  * [全栈](fore/full_stack/)
-  * [工作实践](fore/work/)
-* [后端](back/)
-  * [Node](back/node/)
+
+* [全栈](full_stack/)
+* [工作实践](work/)
+* [Node](node/)
 * [投资](investment/)

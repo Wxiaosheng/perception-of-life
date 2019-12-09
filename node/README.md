@@ -15,7 +15,7 @@
 3. 资源的缓存策略  
 4. 多进程保证程序健壮性
 
-具体实现方式请参考 [这里](back/node/static_server) 。
+具体实现方式请参考 [这里](node/static_server) 。
 
 
 

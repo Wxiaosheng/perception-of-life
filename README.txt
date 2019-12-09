@@ -28,8 +28,8 @@
 3. 开启顶部导航栏  
     在 window.$docsify 中配置 loadNavbar: true 开启顶部导航栏  
     在项目根目录创建 _navbar.md文件，内容如下：  
-      `* [前端](fore/)`  
-      `* [后端](back/)`  
+      `* [前端]()`  
+      `* [后端]()`  
       `* [投资](investment/)`  
       
     导航栏嵌套，内容如下：  

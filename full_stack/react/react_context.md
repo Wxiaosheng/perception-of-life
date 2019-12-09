@@ -328,18 +328,18 @@ class APP extends Component {
 
 <p align="right"> 2019年11月21日 </p>
 
-[1]:https://wxiaosheng.github.io/perception-of-life/#/fore/full_stack/react/react_context?id=何时使用-context
-[2]:https://wxiaosheng.github.io/perception-of-life/#/fore/full_stack/react/react_context?id=使用-context-之前的考虑
-[3]:https://wxiaosheng.github.io/perception-of-life/#/fore/full_stack/react/react_context?id=api
-[4]:https://wxiaosheng.github.io/perception-of-life/#/fore/full_stack/react/react_context?id=reactcreatecontext
-[5]:https://wxiaosheng.github.io/perception-of-life/#/fore/full_stack/react/react_context?id=contextprovider
-[6]:https://wxiaosheng.github.io/perception-of-life/#/fore/full_stack/react/react_context?id=classcontexttype
-[7]:https://wxiaosheng.github.io/perception-of-life/#/fore/full_stack/react/react_context?id=contextconsumer
-[8]:https://wxiaosheng.github.io/perception-of-life/#/fore/full_stack/react/react_context?id=contextdisplayname
-[9]:https://wxiaosheng.github.io/perception-of-life/#/fore/full_stack/react/react_context?id=示例
-[10]:https://wxiaosheng.github.io/perception-of-life/#/fore/full_stack/react/react_context?id=动态-context
-[12]:https://wxiaosheng.github.io/perception-of-life/#/fore/full_stack/react/react_context?id=消费多个-context
-[13]:https://wxiaosheng.github.io/perception-of-life/#/fore/full_stack/react/react_context?id=注意事项
+[1]:https://wxiaosheng.github.io/perception-of-life/#/full_stack/react/react_context?id=何时使用-context
+[2]:https://wxiaosheng.github.io/perception-of-life/#/full_stack/react/react_context?id=使用-context-之前的考虑
+[3]:https://wxiaosheng.github.io/perception-of-life/#/full_stack/react/react_context?id=api
+[4]:https://wxiaosheng.github.io/perception-of-life/#/full_stack/react/react_context?id=reactcreatecontext
+[5]:https://wxiaosheng.github.io/perception-of-life/#/full_stack/react/react_context?id=contextprovider
+[6]:https://wxiaosheng.github.io/perception-of-life/#/full_stack/react/react_context?id=classcontexttype
+[7]:https://wxiaosheng.github.io/perception-of-life/#/full_stack/react/react_context?id=contextconsumer
+[8]:https://wxiaosheng.github.io/perception-of-life/#/full_stack/react/react_context?id=contextdisplayname
+[9]:https://wxiaosheng.github.io/perception-of-life/#/full_stack/react/react_context?id=示例
+[10]:https://wxiaosheng.github.io/perception-of-life/#/full_stack/react/react_context?id=动态-context
+[12]:https://wxiaosheng.github.io/perception-of-life/#/full_stack/react/react_context?id=消费多个-context
+[13]:https://wxiaosheng.github.io/perception-of-life/#/full_stack/react/react_context?id=注意事项
 [14]:https://zh-hans.reactjs.org/docs/composition-vs-inheritance.html
 [15]:https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is#Description
 [16]:https://babeljs.io/docs/en/babel-plugin-proposal-class-properties
