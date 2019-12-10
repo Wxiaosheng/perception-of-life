@@ -5,13 +5,13 @@
 
 > 这是自己的工作方向，在目前的趋势下，还是有不错的上升空间的，但是离不开个人的努力。
 
-* [全栈](full_stack/)  
+[全栈](full_stack/)  
 
-* [工作实践](work/)
+[工作实践](work/)
 
 <div style='margin-top: 100px'></div>
 
-* [Node](node/)
+[Node](node/)
 > 一个全栈工程师所必备的技能。
 
 <div style='margin-top: 100px'></div>
