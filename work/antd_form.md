@@ -14,17 +14,17 @@
 
 ##### 登录框
 &emsp;&emsp;普通的登录框，可以容纳更多的元素。  
-![登录框](../../images/antd-form-1.png)
+![登录框](../images/antd-form-1.png)
 
 ##### 注册框
 &emsp;&emsp;用户填写必须的信息，用以注册新用户或者编辑。
-![注册框](../../images/antd-form-2.png)
+![注册框](../images/antd-form-2.png)
 
 ##### 高级搜索框
 &emsp;&emsp;三列栅格式的表单排列方式，常用于数据表格的高级搜索。  
 &emsp;&emsp;有部分定制的样式代码，由于输入标签长度不确定，需要根据具体情况自行调整。
 
-![高级搜索框](../../images/antd-form-3.png)
+![高级搜索框](../images/antd-form-3.png)
 
 #### 使用
 &emsp;&emsp;1、需要使用 **Form.create()** 的返回值 装饰自定义组件，包装过的组件会自带 **this.props.form** 属性。  
