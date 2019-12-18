@@ -3,4 +3,4 @@
 
 
 1. [H5 唤醒APP](work/h5_call_app)
-2. [UI 组件库 - Ant Design 的常见用法](work/antd_form)
+2. [UI 组件库 - Ant Design 的常见用法](work/use_antd)
