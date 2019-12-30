@@ -6,4 +6,5 @@
 ### [第四天打卡 - 树立价值投资的信念](investment/reading/four)
 ### [第五天打卡 - 从股票的诞生来看股票的本质](investment/reading/five)
 ### [第六天打卡 - 我们该如何开源节流](investment/reading/six)
-### [第六天打卡 - 世界上唯一不变的是变化本身](investment/reading/seven)
+### [第七天打卡 - 世界上唯一不变的是变化本身](investment/reading/seven)
+### [第八天打卡 - 险地勿入 - 一生的修行](investment/reading/eight)
