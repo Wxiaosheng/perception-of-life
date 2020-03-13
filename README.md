@@ -16,6 +16,11 @@
 
 <div style='margin-top: 100px'></div>
 
+[博客](blog/)
+> 个人博客
+
+<div style='margin-top: 100px'></div>
+
 [投资](investment/)
 > 建立正确的理财观，搭建自己的投资体系。
 
