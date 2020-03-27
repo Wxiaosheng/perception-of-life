@@ -6,4 +6,4 @@
 
 
 ### 实际应用
-* [CSS3 + JS 实现音视频播放器播放按钮](full_stack/css/playBtn)
+* [CSS3 + JS 实现音视频播放器播放按钮](full_stack/base/css/playBtn)

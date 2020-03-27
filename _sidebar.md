@@ -1,8 +1,11 @@
 
-* [全栈](full_stack/)
+* 全栈
   * [基础知识](full_stack/base/)
   * [Node](full_stack/node/)
   * [React](full_stack/react/)
-* [工作实践](work/)
+
+* 工作实践
+  * [常见问题](work/problems/)
 * [博客](blog/)
-* [投资](investment/)
+  <!-- * [文章列表](blog/) -->
+<!-- * [投资](investment/) -->

@@ -8,8 +8,8 @@
 
 <div style="margin-top: 100px"></div>
 
-1. [Form 表单的使用](work/antd_form)  
+1. [Form 表单的使用](work/problems/antd_form)  
 
-2. [带有搜索框的 table 列表页面](work/antd_list_page)  
+2. [带有搜索框的 table 列表页面](work/problems/antd_list_page)  
 
-3. [图片上传 Upload](work/antd_upload)
+3. [图片上传 Upload](work/problems/antd_upload)

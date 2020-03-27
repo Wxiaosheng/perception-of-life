@@ -1,6 +1,7 @@
+
 > 在工作的过程中，经常遇见各种各样的难题，或者需求，在此处开始记录自己工作工程中遇见的问题，以及对应的解决方法，抱着 “开放、共享” 的互联网原则，来分享自己工作中的点点滴滴，希望能帮助需要帮助的人，让我们一起编程这条无止境的学习之路上有种 “吾道不孤” 的感觉
 
 
 
-1. [H5 唤醒APP](work/h5_call_app)
-2. [UI 组件库 - Ant Design 的常见用法](work/use_antd)
+1. [H5 唤醒APP](work/problems/h5_call_app)
+2. [UI 组件库 - Ant Design 的常见用法](work/problems/use_antd)

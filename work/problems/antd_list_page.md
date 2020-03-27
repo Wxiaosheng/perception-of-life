@@ -1,6 +1,6 @@
 ## 带有搜索框的 table 列表页面
 
-![带有搜索框的 table 列表页面](../images/antd_list_page.png)
+![带有搜索框的 table 列表页面](../../images/antd_list_page.png)
 &emsp;&emsp;在开发管理后台时，我们经常会碰见这样的页面，通过页面顶部的搜索，得到一组数据展示在表格中。下面来说一说实现的原理。   
 &emsp;&emsp;1、将搜索框中的搜索条件都存储在页面级组件的 state 中；  
 &emsp;&emsp;2、在页面级组件的 componentDidMount 中根据搜索条件请求接口获取默认数据；  

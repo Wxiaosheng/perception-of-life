@@ -1,4 +1,4 @@
-### Node
+### 概念
 > Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行时。
 
 可以通过官网文档查看更多的 [API](http://nodejs.cn/api/)
@@ -15,7 +15,7 @@
 3. 资源的缓存策略  
 4. 多进程保证程序健壮性
 
-具体实现方式请参考 [这里](node/static_server) 。
+具体实现方式请参考 [这里](full_stack/node/static_server) 。
 
 
 
