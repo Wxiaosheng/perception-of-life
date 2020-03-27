@@ -1,7 +1,7 @@
 ## 基础知识
 
 ### CSS 部分
-&emsp;&emsp;[CSS](full_stack/css/)
+&emsp;&emsp;[CSS](full_stack/base/css/)
 
 ### ES6
 #### 变量/赋值
