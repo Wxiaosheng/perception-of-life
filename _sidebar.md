@@ -7,6 +7,7 @@
 
 * 工作实践
   * [常见问题](work/problems/)
-* [博客](blog/)
+* 博客
+  * [webpack](blog/webpack/)
   <!-- * [文章列表](blog/) -->
 <!-- * [投资](investment/) -->
