@@ -228,7 +228,7 @@ targets，用来配置需要支持的的环境，不仅支持浏览器，还支�
 
 !> 需要配置 **corejs** 参数，默认为 2；如果设置为 3 时，手动导入 @babel/polyfill 必须换成 corejs/stable 和 regenerator-runtime/runtime
 
-!> 使用 **@babel/preset-env** 包的 **useBuiltIns** 的参数解决 polyfill 问题时，不需要安装 **@babel/polyfill**
+!> useBuiltIns：false 时，手动在入口处引入 **@babel/polyfill**，则需要安装 **@babel/polyfill** 否则打出来的包没有 require 那些转译的 plugins，但 webpack/babel 打包时并不会在命令行提示和报错， entry 和 usage 都不需要安装 **@babel/polyfill**
 
 !> 当前的这些测试是基于 "@babel/core": "^7.9.0"、 "@babel/preset-env": "^7.9.0" 、"webpack": "^4.42.1" 测试的
 
