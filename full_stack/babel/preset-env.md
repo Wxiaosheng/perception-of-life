@@ -185,6 +185,7 @@ targets，用来配置需要支持的的环境，不仅支持浏览器，还支�
   "use strict";
   require("regenerator-runtime/runtime");
   require("core-js/modules/es6.promise");
+  // ......
   require("core-js/modules/es6.object.to-string");
   require("core-js/modules/es7.array.includes");
 
