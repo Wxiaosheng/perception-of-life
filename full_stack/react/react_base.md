@@ -1,4 +1,4 @@
-## React
+
 > A JavaScript library for building user interfaces  
 > 即，用于构建用户界面的 JavaScript 库
 
