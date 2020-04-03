@@ -43,7 +43,7 @@ let, const
 
 
 #### 面向对象
-&emsp;&emsp;ES5实现继承的方式可以参考 [这里](/full_stack/继承)  
+&emsp;&emsp;ES5实现继承的方式可以参考 [这里](/full_stack/base/inherit)  
 &emsp;&emsp;定义： class / constructor  
 &emsp;&emsp;继承： extends / super  
 

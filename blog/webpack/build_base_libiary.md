@@ -10,7 +10,7 @@
 [3、发布到 npm ](#ddl3)  
 
 
-<h4 id="bbl1">开发组件库</h4>
+#### 开发组件库 :id=bbl1
 现在我们以实现 **大整数加法** 的基础库为例
 
 ```javascript
@@ -28,7 +28,7 @@
 具体实现的逻辑，请参照[文件源码](https://github.com/Wxiaosheng/big-number-addition)
 
 
-<h4 id="bbl2">使用 webpack 打包，支持 AMD/CJS/ESM 模块引入</h4>
+#### 使用 webpack 打包，支持 AMD/CJS/ESM 模块引入 :id=bbl2
 这里的打包有些特殊，因为同时打出了两个包，一个未压缩适合开发环境，和一个已压缩适合生产环境的两个文件  
 
 具体实现方式：  
@@ -59,7 +59,7 @@
 
 ```
 
-<h4 id="ddl3">发布到 npm</h4>
+#### 发布到 npm :id=ddl3
 
 ##### 设置 pageage.json
 1. main：指定包的入口文件
@@ -150,7 +150,7 @@
 
 当前的目录结构中，根目录下的 index.js 文件仅仅是 pageage.json 的入口文件，而 webpack 的入口文件则是 src/index.js，分离开来，并且在根目录下的 index.js 文件中，设置了 module.exports 。  
 
-这导致有一些差异：  
+!> 这导致有一些差异：  
 1. 无 src（源码的目录）结构中根目录下的 index.js 文件 使用的是 export default xxx 的方法，因此 webpack 的 output 配置项项中可以不配置 **libraryExport: 'default'**；  
 
 2. 前的目录结构中，根目录下的 index.js 文件则使用的是 module.exports，所以必须要配置 **libraryExport: 'default'**；
