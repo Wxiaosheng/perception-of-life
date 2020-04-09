@@ -12,7 +12,7 @@ polyfill 用起来很方便，但是你应该和 @babel/preset-env 以及 useBui
 
 !> 注意，只要是通过 @babel/polyfill 的方式来转译 API，都会存在全局污染的问题
 
-可参照 [这里](/full_stack/babel/preset-env.md?id=usebuiltins)
+可参照 [这里](/full_stack/babel/compare_polyfill.md)
 
 
 
@@ -22,6 +22,8 @@ polyfill 用起来很方便，但是你应该和 @babel/preset-env 以及 useBui
 @babel/polyfill 解决了 Babel 不转换新 API 的问题，但是直接在代码中出入了帮助函数，**会导致全局污染**，并且不同的代码文件中**包含重复的代码**，导致编译后的代码体积变大。
 
 Babel为了解决这个问题，提供了单独的包 @babel/runtime 用以提供编译模块的工具函数， 启用插件 @babel/plugin-transform-runtime 后，Babel就会使用 @babel/runtime 下的工具函数。
+
+!> @babel/polyfill 与 @babel/runtime 相比虽然有各种缺点，但在某些情况下仍然不能被 @babel/runtime 替代， 例如，代码：[1, 2, 3].includes(3)，Object.assign({}, {key: 'value'})，Array，Object 以及其它 "实例" 下 es6 的方法，@babel/runtime 是无法支持的， 因为@babel/runtime 只支持到 static 的方法
 
 
 
@@ -69,8 +71,27 @@ Babel为了解决这个问题，提供了单独的包 @babel/runtime 用以提�
 **helpers**（定义了一些处理新的语法关键字的帮助函数）  
 **regenerator**（仅仅是引用regenerator-runtime这个npm包）   
 
-
 !> 因此可以发现，@babel/runtime-corejs2 ≈ @babel/runtime + @babel/polyfill  
+
+#### @babel/polyfill 和 @babel/runtime-corejs2 比较
+二者都使用了 core-js(v2)这个库来进行 api 的处理，core-js(v2) 这个库有两个核心的文件夹，分别是 library 和 modules。  
+
+1. @babel/runtime-corejs2 使用 library 这个文件夹，library 使用 helper 的方式，局部实现某个 api，不会污染全局变量；
+
+2. @babel/polyfill 使用 modules 这个文件夹，modules 以污染全局变量的方法来实现 api；
+
+```javascript
+  var p = new Promise();
+
+  // @babel/polyfill
+  require("core-js/modules/es6.promise");
+  var p = new Promise();
+
+  // @babel/runtime-corejs2
+  var _interopRequireDefault = require("@babel/runtime-corejs2/helpers/interopRequireDefault");
+  var _promise = _interopRequireDefault(require("@babel/runtime-corejs2/core-js/promise"));
+  var a = new _promise.default();
+```
  
 #### 这些库之间的联系
 1. @babel/runtime 只能处理语法关键字，而 @babel/runtime-corejs2 还能处理新的全局变量（例如，Promise）、新的原生方法（例如，String.padStart ）；  
