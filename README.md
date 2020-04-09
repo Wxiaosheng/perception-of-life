@@ -7,21 +7,21 @@
 
 [全栈](full_stack/)  
 
-[工作实践](work/)
+[工作实践](work/problems/)
 
 <div style='margin-top: 100px'></div>
 
-[Node](node/)
-> 一个全栈工程师所必备的技能。
+<!-- [Node](node/)
+> 一个全栈工程师所必备的技能。 -->
 
 <div style='margin-top: 100px'></div>
 
-[博客](blog/)
-> 个人博客
+<!-- [博客](blog/)
+> 个人博客 -->
 
 <div style='margin-top: 100px'></div>
 
-[投资](investment/)
-> 建立正确的理财观，搭建自己的投资体系。
+<!-- [投资](investment/)
+> 建立正确的理财观，搭建自己的投资体系。 -->
 
 
