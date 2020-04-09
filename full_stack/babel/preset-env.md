@@ -41,6 +41,8 @@ targets，用来配置需要支持的的环境，不仅支持浏览器，还支�
 
 > 此时不对 polyfill 做操作。如果手动引入 @babel/polyfill，则无视配置的浏览器兼容，引入所有的 polyfill。
 
+!> 不推荐这种方式，因为这会导致代码体积很大。
+
 ```javascript
   // 例如使用如下的 babel 配置
   {
@@ -104,6 +106,8 @@ targets，用来配置需要支持的的环境，不仅支持浏览器，还支�
 ```
 
 需要手动在入口文件处导入 @babel/polyfill，会自动根据 browserslist 的配置替换成浏览器不兼容的所有 polyfill
+
+!> 能够覆盖到'hello'.includes('h')这种句法，足够安全且代码体积不是特别大，推荐这么用
 
 !> 经测试发现，不需要安装 @babel/polyfill，因为转译后的文件，引入的都是 core-js 和 regenerator-runtime/runtime
 ```javascript
@@ -178,6 +182,7 @@ targets，用来配置需要支持的的环境，不仅支持浏览器，还支�
 
 > 不需要手动安装 @babel/polyfill，也不用在文件顶部引入 @babel/polyfill，会根据代码中的使用进行按需添加。 
 
+!> 注意，检测不到'hello'.includes('h')这种句法，对这类原型链上的句法问题不会做转译，如果使用这种方式，书写代码需注意。
 
 ```javascript
   // 转译后的代码

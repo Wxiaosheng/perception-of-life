@@ -9,16 +9,11 @@ Babel 是一个工具链，主要用于将 ECMAScript 2015+ 版本的代码转�
 
 1. [@babel/preset-env](/full_stack/babel/preset-env)
 
-2. [@babel/polyfill](/full_stack/babel/polyfill)
+2. [常见的库](/full_stack/babel/babel_common_library)
+> 包括 @babel/polyfill、@babel/runtime、@babel/plugin-transform-runtime、@babel/runtime-corejs2 等
 
-3. babel-runtime
+3. [实现 polyfill 方案的比较](/full_stack/babel/compare_polyfill)
 
-  babel-polyfill解决了Babel不转换新API的问题，但是直接在代码中插入帮助函数，会导致污染了全局环境，并且不同的代码文件中包含重复的代码，导致编译后的代码体积变大。
-
-Babel为了解决这个问题，提供了单独的包babel-runtime用以提供编译模块的工具函数， 启用插件babel-plugin-transform-runtime后，Babel就会使用babel-runtime下的工具函数。
-
-
-!> 如果是用 babel7 来转译，需要安装 @babel/core、@babel/preset-env 和 @babel/plugin-transform-runtime，而不是 babel-core、babel-preset-env 和 babel-plugin-transform-runtime，它们是用于 babel6 的。
 
 
 
