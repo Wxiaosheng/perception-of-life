@@ -4,6 +4,7 @@
   * [Node](full_stack/node/)
   * [React](full_stack/react/)
   * [Babel](full_stack/babel/)
+  * [webpack](full_stack/webpack/)
 
 * 工作实践
   * [常见问题](work/problems/)
