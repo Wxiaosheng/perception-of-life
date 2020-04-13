@@ -6,5 +6,7 @@
 
 1. [核心概念](/full_stack/webpack/core)
 2. [常见loader](/full_stack/webpack/common_loader)
-3. [热更新](/full_stack/webpack/HMR)
-4. [文件指纹和代码压缩](/full_stack/webpack/hash_compress)
+3. [常见plugin](/full_stack/webpack/common_plugin)
+4. [热更新](/full_stack/webpack/HMR)
+5. [文件指纹和代码压缩](/full_stack/webpack/hash_compress)
+6. [多页面打包方案](/full_stack/webpack/multi_page_build)
