@@ -4,6 +4,7 @@
   * [Node](full_stack/node/)
   * [React](full_stack/react/)
   * [Babel](full_stack/babel/)
+  * [ESLint](full_stack/eslint/)
   * [webpack](full_stack/webpack/)
 
 * 工作实践
