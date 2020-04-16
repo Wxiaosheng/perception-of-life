@@ -120,5 +120,5 @@
 #### 搭配使用
 通常 ESLint 不会单独使用，而是
 1. [配合 prettier 实现代码自动格式化](/full_stack/eslint/prettier)  
-2. 配合 husky 实现处理 pre-commit、 pre-push 等 githooks 的工具
+2. [配合 husky 实现处理 githooks](/full_stack/eslint/husky) 
 3. 配合 lint-staged 实现 对 git 暂存区的代码，运行 linters 的工具
