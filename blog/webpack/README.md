@@ -4,6 +4,6 @@
 
 2. [基于create-react-app的多页面打包方案](/blog/webpack/multi_page_build)
 
-3. [在 create-react-app 中使用 ESLint](/blog/webpack/react-use-eslint)
+3. [在 create-react-app 中使用 TypeScript](/blog/webpack/react-use-ts)
 
-4. [create-react-app使用 TypeScript](/blog/webpack/react-use-ts)
+4. [在 create-react-app 中使用 ESLint](/blog/webpack/react-use-eslint)
