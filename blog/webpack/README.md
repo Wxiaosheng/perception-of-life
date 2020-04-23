@@ -9,3 +9,5 @@
 4. [在 create-react-app 中使用 ESLint](/blog/webpack/react-use-eslint)
 
 5. [在 create-react-app 中开启 sass](/blog/webpack/react-use-sass)
+
+5. [在 create-react-app 中使用 axios](/blog/webpack/react-use-axios)
