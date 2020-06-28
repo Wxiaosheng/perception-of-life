@@ -12,5 +12,6 @@
   * [常见问题](work/problems/)
 * 博客
   * [webpack](blog/webpack/)
+  * [other](blog/other/)
   <!-- * [文章列表](blog/) -->
 <!-- * [投资](investment/) -->
