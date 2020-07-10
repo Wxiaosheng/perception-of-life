@@ -2,6 +2,7 @@
 
 ### HTML
 * 是什么？发展历史？
+* 与 XHTML 的区别
 * doctype
 * 什么是HTML语义化
 * HTML5有哪些新标准？更新的标准是什么？
@@ -24,6 +25,7 @@
 * 盒子相对父盒子居中的几种办法
 * 一个div，怎么用css实现半圆和圆形
 * display:none与visibility:hidden的区别
+* div包裹 img，底部会出现空白
 
 
 ### JavaScript
