@@ -18,13 +18,22 @@
 
 #### DOCTYPE
 Document Type，即文档类型，用来指定当前页面所使用的的（X）HTML的版本  
-声明位于文档中的最前面的位置，处于 标签之前。 声明不是一个 HTML 标签，它是用来告知 Web 浏览器页面使用了哪种 HTML 版本  
+声明位于文档中的最前面的位置，处于 标签之前。 声明不是一个 HTML 标签，它是用来告知浏览器使用哪种版本规范来渲染文档  
+当 DOCTYPE 不存在或者形式不正确时，会导致 HTML 文档以**混杂模式**模式呈现  
 
-DTD（Document Type Definition 文档类型定义）的作用是定义XML文档的合法构建模块
+##### 标准模式 与 混杂模式
+标准模式 以浏览器支持的最高标准运行；混合模式中 页面是一种比较宽松的向后兼容的方式显示
 
+##### 为什么HTML5只用写 <!DOCTYPE HTML> ?
+HTML5不基于SGML（Standard Generalized Markup Language 标准通用标记语言），因此不需要对DTD（DTD 文档类型定义）进行引用，但是需要DOCTYPE来规范浏览器行为  
 
-#### 谈谈对 HTML 语义化的理解
+##### 谈谈对 HTML 语义化的理解
 根据所要表达的内容的含义，选择合适的标签，以便于开发者阅读和写出更优雅的代码，同时更利于爬虫和机器解析
+
+##### 常见分类元素
+行内元素： a span img input select  
+块级元素： div ul ol li dl dt dd h1 p   
+空元素：  br hr link meta  
 
 ##### 为什么使用语义化
 * 为了在没有css的情况下，页面也能呈现出很好的内容结构和代码结构
@@ -68,3 +77,44 @@ HTML5 ≈ HTML5核心规范 + CSS 3 + JavaScript， 其中HTML5和CSS主要负�
 * artical 主要内容
 * aside 侧边栏
 * footer 底部
+
+
+##### label 的作用是什么？是怎么用的？
+label 标签用来定义表单控件的关系，当用户选择该标签时，浏览器会自动将焦点转到和标签相关的表单控件上。  
+
+常用属性
+* **for**: 表示label标签要绑定的HTML元素。你点击这个标签是，所绑定的元素自动获取焦点
+* **accesskey**: 表示访问label标签所绑定的元素的热键，当您按下热键，所绑定的元素将获取焦点
+
+
+
+##### 页面可见性（Page Visibility）API
+就是对于用户来说，页面是显示还是隐藏, 所谓显示的页面，就是我们正在看的页面；隐藏的页面，就是我们没有看的页面，例如 后台运行时，页面就是不可见的
+
+监听 `visibilitychange` 事件，访问 `document.hidden`，如果为 `true`，则表示页面可见，如果为 `false`，则表示隐藏
+
+```javascript
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) {//  页面展示
+
+  } else { // 页面隐藏
+
+  }
+
+  /* 
+    * 表示页面所处的状态
+    * visible : 页面内容至少部分可见。
+    * hidden : 页面内容对用户不可见。
+    * prerender : 网页内容被预渲染并且用户不可见。
+    * unloaded : 如果文档被卸载，将返回这个值
+  */
+  console.log(document.visibilityState)
+})
+
+```
+
+##### 元素的 alt 和 title 有什么异同？
+图片加载出错时， alt 会做为图片的代替文字出现，title 是元素的解释文字
+
+
+
