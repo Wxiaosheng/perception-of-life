@@ -113,7 +113,7 @@ div span > i { ... }  // bad
   .box { transition: 1s; }
 
   /* 
-    transition-property: height;
+     transition-property: height;
      transition-duration: 1s;
      transition-delay: 1s;
      transition-timing-function: ease;
@@ -123,8 +123,8 @@ div span > i { ... }  // bad
 ```
 ###### transition 注意事项
 1. 目前，各大浏览器（包括IE 10）都已经支持无前缀的transition，所以transition已经可以很安全地不加浏览器前缀
-2. 不是所有的CSS属性都支持transition，完整的列表查看这里，以及具体的效果
-3.transition需要明确知道，开始状态和结束状态的具体数值，才能计算出中间状态。比如，height从0px变化到100px，transition可以算出中间状态。但是，transition没法算出0px到auto的中间状态，也就是说，如果开始或结束的设置是height: auto，那么就不会产生动画效果。类似的情况还有，display: none到block，background: url(foo.jpg)到url(bar.jpg)等等
+2. 不是所有的CSS属性都支持transition 
+3. transition需要明确知道，开始状态和结束状态的具体数值，才能计算出中间状态。比如，height从0px变化到100px，transition可以算出中间状态。但是，transition没法算出0px到auto的中间状态，也就是说，如果开始或结束的设置是height: auto，那么就不会产生动画效果。类似的情况还有，display: none到block，background: url(foo.jpg)到url(bar.jpg)等等
 
 ###### transition的局限
 transition 的优点在于简单易用，但是它有几个很大的局限。
@@ -133,13 +133,12 @@ transition 的优点在于简单易用，但是它有几个很大的局限。
 3. transition 只能定义开始状态和结束状态，不能定义中间状态，也就是说只有两个状态。
 4. 一条 transition 规则，只能定义一个属性的变化，不能涉及多个属性。
 
-**CSS Animation就是为了解决这些问题而提出的**
+**<span class="red">CSS Animation就是为了解决这些问题而提出的</span>**
 
 
 ##### Animation
-
+###### 基本用法
 ```css
-  /* 基本用法 */
   /* 1、指定动画一个周期持续的时间，以及动画效果的名称 */
   .box:hover { animation: 1s rainbow; }
 
@@ -153,10 +152,19 @@ transition 的优点在于简单易用，但是它有几个很大的局限。
   /* 也可以指定动画具体播放的次数，比如 3 次 */
   .box { animation: 1s rainbow 3; }
 ```
+###### 其他属性
+    动画结束以后，会立即从结束状态跳回到起始状态。如果想让动画保持在结束状态，需要使用`animation-fill-mode`属性
+    1. none：默认值，回到动画没开始时的状态
+    2. backwards：让动画回到第一帧的状态
+    3. both: 根据 animation-direction（见后）轮流应用forwards和backwards规则
+
+    有时，动画播放过程中，会突然停止。这时，默认行为是跳回到动画的开始状态
+    如果想让动画保持突然终止时的状态，就要使用animation-play-state属性
+
+动画循环播放时，每次都是从结束状态跳回到起始状态，再开始播放。animation-direction属性，可以改变这种行为，兼容性不好，慎用！
 
 
-
-* 常见移动端布局方式
+[常见移动端布局方式](/blog/css/layout)
 
 * style 与 import 哪个权重更高
 * sass/less
