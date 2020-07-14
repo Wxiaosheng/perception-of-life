@@ -12,11 +12,11 @@
   所有的 HTML 元素都可以看做盒子，盒模型是 CSS 构建的基础，由内到外包括 content、padding、border 和 margin 四个部分；
 
 ##### 分类  
-  **标准盒模型** 和 **IE 盒模型**，如下图所示xw
-![content box](/interview/images/content-box.png)
+  **标准盒模型** 和 **IE 盒模型**，如下图所示
+![content box](/interview/images/content-box.png)  
 通过 CSS 设置的 width 只是表示 content 的大小，当新增 padding、border 和 margin 时，元素整体大小会发生变化；
 
-![botder box](/interview/images/border-box.png)
+![botder box](/interview/images/border-box.png)  
 通过 CSS 设置的 width 表示的是 content、padding 和 border 的大小，当修改 padding、border 和 margin 时，元素整体大小不会发生变化；
 
 ##### 区别
