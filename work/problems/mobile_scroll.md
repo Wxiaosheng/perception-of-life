@@ -55,15 +55,7 @@ li {
   <div class="title">标题</div>
   <ul>
     <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
-    <li>6</li>
-    <li>7</li>
-    <li>8</li>
-    <li>9</li>
-    <li>10</li>
+    <!-- ...省略... -->
   </ul>
 </div>
 ```
@@ -74,5 +66,43 @@ li {
 #### 方法二：scrollTop、offsetTop、pageYoffset
 请参照个人开发 `@tianzun/react-mobile-sticky` 组件
 
-#### 方法三：obj.getBoundingClientRect
+#### 方法三：obj.getBoundingClientRect(兼容性最好的方式)
 使用 `obj.getBoundingClientRect` 方法，获取目标元素距离视窗的高度，宽度，距离等值 来实现
+```html
+<div id="box">
+  <p>some txt</p>
+  <p>some txt</p>
+  <p>some txt</p>
+  <div id="target">标题</div>
+  <div id="none" style="display: none;">标题</div>
+  <ul>
+    <li>1</li>
+    <!-- ...省略... -->
+  </ul>
+</div>
+<script>
+  const box = document.getElementById("box")
+  const tar = document.getElementById("target")
+  const none = document.getElementById("none")
+
+  const targetTop = tar.getBoundingClientRect().top;
+
+  let isChange = false;
+  let oldClass = ""
+
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > targetTop) {
+      if (!isChange) {
+        oldClass = tar.className
+        isChange = true
+        tar.className += " sticky"
+        none.style.display = "block";
+      }
+    } else {
+      tar.className = oldClass
+      isChange = false
+      none.style.display = "none";
+    }
+  })
+</script>
+```
