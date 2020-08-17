@@ -74,21 +74,20 @@
 
 ### 深浅拷贝
 > 深浅拷贝其实主要是针对引用类型数据来说的
+
 #### 什么是浅拷贝？ 如何实现？
 浅拷贝是指，在变量的赋值中，仅将引用类型变量的地址拷贝了一份，并没将堆内存中实际的对象的属性逐一拷贝  
 浅拷贝的实现：
-  1. 直接使用赋值符号即可，
+  1. 循环属性，直接使用赋值符号即可
   2. 可以使用 `Object.assign`(只会拷贝对象所有的属性值到新对象中，如果属性值是引用数据，则只拷贝地址)  
   3. 还能使用 `...` 扩展运算符
-
-
 
 #### 什么是深拷贝？ 如何实现？
 深拷贝是指，在变量的赋值中，将将堆内存中实际的对象的属性逐一拷贝生成新的对象，并赋值的是新的对象的地址    
 深拷贝的实现：
 1. `JSON.parse(JSON.stringify(object))` 
   存在局限性，忽略 `undefined`、`Symbol`、`function`，而且也不能解决循环引用的对象
-2. 
+2. 递归
 ```js
   // 深拷贝的实现其实是非常难的，要考虑很多边界值，比如 原型链如何处理，DOM如何处理等等
   // 深拷贝的实现，主要是通过递归的方式，逐层查找引用数据类型的对象
@@ -113,3 +112,22 @@
   }
 ```
 
+### 原型
+> 如何理解原型？  
+如何理解原型链？  
+
+在 JavaScript 中，只要是对象都有 `__proto__` 内部属性，我们可以通过 `Object.getPrototypeOf(obj)` 获得指定对象的原型对象  
+在 JavaScript 中，只要是函数都有 `prototype` 属性，通过该函数做为构造函数，创建的实例对象的原型对象(`children.__proto__`)，同时 `prototype` 原型对象中还有一个 `constructor` 属性，指向该函数本身
+
+##### 总结
+1. `Object` 是所有对象的父类，所有对象都能通过 `__proto__` 找到 `Object.prototype`
+2. `Function` 是所有函数的父类，所有函数都能通过 `__proto__` 找到 `Function.prototype`
+3. 函数的 `prototype` 是一个对象，对象的 `__proto__` 指向其构造函数的 `prototype`
+
+##### 特殊情况
+![Function prototype](/interview/images/Function-prototype.jpg)  
+通常，我们通过 `Object.prototype.toString(Function)` 输出 `[object Object]` 一直以为 `Function` 是 `Object` 的子类，但是通过上图我们却发现 `Function.__proto__ === Object.prototype` 却输出 `false`，因此这和我们平时所理解的有些不同  
+
+`Object.__proto__ === Function.prototype` 与 `Function.__proto__ === Function.prototype` 都输出 `true`，因此可以发现，`Object` 是通过 `Function` 创建的，并且 `Function` 也是通过自己创建的(有点鸡生蛋，蛋生鸡的意思)
+
+###
