@@ -12,7 +12,7 @@
   * [webpack](full_stack/webpack/)
 
 * 工作实践
-  * [常见问题](work/problems/)
+  * [常见问题](work/)
 * [博客](blog/)
   <!-- * [文章列表](blog/) -->
 <!-- * [投资](investment/) -->

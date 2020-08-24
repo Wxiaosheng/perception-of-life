@@ -7,7 +7,7 @@
 
 [全栈](full_stack/)  
 
-[工作实践](work/problems/)
+[工作实践](work/)
 
 <div style='margin-top: 100px'></div>
 
