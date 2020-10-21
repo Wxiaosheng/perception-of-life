@@ -18,7 +18,7 @@
 * 手写 状态机 
   * 什么是状态机， https://zhuanlan.zhihu.com/p/47434856
   * https://github.com/jakesgordon/javascript-state-machine
-* 手写 
+* [手写 LRU Cache](blog/write/LRU_Cache.md)
 * 手写 
 
 ## CSS
