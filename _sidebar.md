@@ -3,10 +3,10 @@
   * [CSS](base/css/)
   * [JavaScript](base/js/)
 
-* [重学前端](cxqd/)
+* 重学前端
   * [html](cxqd/html/)
   * [javascript](cxqd/javascript/)
-  * [浏览器基本原理](cxqd/browser)
+  * [浏览器基本原理](cxqd/browser/)
 
 * 全栈
   * [Node](full_stack/node/)

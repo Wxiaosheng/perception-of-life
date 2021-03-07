@@ -1,4 +1,3 @@
-## JavaScript
 
 1. [JavaScript 类型](./1_type.md)
 
