@@ -1,9 +1,9 @@
 ## 手写系列
-* 手写 new 
+* [手写 new](blog/write/new.md) 
 * 手写 Promise
-* 手写 call
-* 手写 apply
-* 手写 bind
+* [手写 call](blog/write/bind_this.md#手写call)
+* [手写 apply](blog/write/bind_this.md#手写apply)
+* [手写 bind](blog/write/bind_this.md#手写bind)
 * 手写 节流
 * 手写 防抖
 * 手写 深浅拷贝
