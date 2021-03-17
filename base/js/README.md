@@ -8,3 +8,5 @@
 4、[作用域和闭包](/base/js/scope_closure)
 
 5、[单线程和异步](/base/js/asynchronous)
+
+6、[函数](/base/js/function)
